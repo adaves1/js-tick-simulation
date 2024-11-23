@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js-tick-simulation</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="js, tick, jssim">
+    <meta name="description" content="just a template tick simulation in js">
+    <meta name="author" content="Anthony Daves">
+    <meta http-equiv="refresh" content="3600">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h3>JS Tick counter that ticks every 30 seconds</h3>
+    <div id="counter"></div>
+    <script>
+        let count = 1;
+
+        setInterval(() => {
+            count++;
+            document.getElementById('counter').innerHTML = count;
+        }, 30000);
+    </script>
+</body>
+</html>
